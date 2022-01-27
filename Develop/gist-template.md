@@ -1,8 +1,11 @@
-# Title (replace with your title)
-
+# This is a Regex Tutorial
 Introductory paragraph (replace this with your text)
 
+### As part of my journey to become a web developer, I have created a tutorial in which I explain the use fo regular expressions aka "Regex".This tutorial will help us understand search patterns inplementing regex. 
+
+
 ## Summary
+
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
