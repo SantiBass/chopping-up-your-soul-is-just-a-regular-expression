@@ -28,7 +28,7 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
-
+- #### ^ and $ Anchors are used at the beginning or at the end of a string. In our regex example we only apply the carrot (^) anchor ^(https?:\/\/).
 ### Quantifiers
 
 ### OR Operator
