@@ -44,12 +44,15 @@ Quantifiers specify how many instances of a character, group, or character class
 - #### A regular expression follow del
 
 ### OR Operator
-Or oppretators
-- #### 
+OR operators, also known as Alternation Operator, act like a boolean operator. Les's take a look a couple examples of the 'OR' operator.
+
+- #### `|` this `OR` operator matches the outer string plus the character(s) before or after itself that are within the parenthesis. For example: `a(b|c)` will match `ab`c, `ac`b, or cool`ab`fan, etc, in a string.
+- #### `[]` this `OR` operator matches the outer string plus one of the characters within the brackets. For example: `a[bc]` will match `ab`c, `ac`b, or cool`ab`fan, etc, in a string 
 
 
-/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Character Classes
+Character classes, also known as `'Charcter Set'`
+
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Flags
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
