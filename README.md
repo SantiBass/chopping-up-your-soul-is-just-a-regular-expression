@@ -6,10 +6,9 @@ Introductory paragraph (replace this with your text)
 
 ## Summary
 ### Regex or "Regular Expression" is a tool  that help  us to define a search pattern. This expression is regularly a sequence of characters that would simplify our global search. At first sight, it seem very intimidating string of characters but after break it down to its most basic components, it will become more like a game for kids. So let's dive in! Let's take a look at this regex:
-### /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)/
+### /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### To sail into our journey to understand this regex let's take a look at the "Table of Content"
 
-Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
 
 ## Table of Contents
 ### 
@@ -28,27 +27,40 @@ Briefly summarize the regex you will be describing and what you will explain. In
 ## Regex Components
 
 ### Anchors
-- #### ^ and $ Anchors are used at the beginning or at the end of a string. In our regex example we only apply the carrot (^) anchor ^(https?:\/\/).
+- #### `^` The caret anchor is used to mach any string at the beginning of a regex.
+- #### `$` The dollar sign anchor is used to match the end of a string or a line before it in a regex. This matches a position, not a character.
+    #### Here are some examples of anchors:
+    #### `^(https://) = https;//`. Becauce the expression is whitin parenthesis.
+    #### `(funny animals)$` = funny animals. Becauce the expression is withing parenthesys   
+
 ### Quantifiers
-
+Quantifiers specify how many instances of a character, group, or character class must be present in the input for a match to be found in any regular expression.
+- ####  `*`      
+- ####  `+` 
+- ####  `?`  
+- ####  `{n}`
+- ####  `{n,}`
+- ####  `{n,m}`
+- #### A regular expression follodel
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### OR Operator
-
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Character Classes
-
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Flags
-
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Grouping and Capturing
-
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Bracket Expressions
-
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Greedy and Lazy Match
-
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Boundaries
-
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Back-references
-
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Look-ahead and Look-behind
-
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ## Author
-
+/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)

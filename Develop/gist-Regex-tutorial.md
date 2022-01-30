@@ -1,12 +1,12 @@
 # This is a Regex Tutorial
 Introductory paragraph (replace this with your text)
 
-### As part of my journey to become a web developer, I have created a tutorial in which I explain the use for regular expressions aka "Regex".This tutorial will help us understand search patterns implementing regex. 
+### As part of my journey to become a web developer, I have created a tutorial in which I explain the use for regular expressions a.k.a "Regex". This tutorial will help us understand search patterns implementing regex. 
 
 
 ## Summary
-### Regex or "Regular Expression" is a tool  that help  us to define a search pattern. This expression is regularly a sequence of characters that would simplify our global search. At first sight, it seem very intimidating string of characters but after break it down to its most basic components, it will become more like a game for kids. So let's dive in! Let's take a look at this regex:
-### /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)/
+### Regex or "Regular Expression" is a tool that help us to define a search pattern. This expression is regularly a sequence of characters that would simplify our global search. At first sight, it seem very intimidating string of characters but after break it down to its most basic components, it will become more like a game for kids. So let's dive in! Let's take a look at this regex:
+### "/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)/"
 ### To sail into our journey to understand this regex let's take a look at the "Table of Content"
 
 Briefly summarize the regex you will be describing and what you will explain. Include a code snippet of the regex. Replace this text with your summary.
