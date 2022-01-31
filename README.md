@@ -87,14 +87,8 @@ Bracket Expressions are characters enclosed by a pair of bracket.
 Greedy and Lazy match are quantifiers that can expand the reach of the matching through the text. They make the preceding quantifier lazy, causing it to match as few characters as possible. By default, quantifiers are greedy, and will match as many characters as possible.
 - #### `{}, *, +` These symbols are used as greedy and lazy mach. For example: `b\w+?`, will match any `b` plus the following letter `be`er, `bo`ot.
 
-
-
-### Boundaries
-/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
-### Back-references
-/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
-### Look-ahead and Look-behind
-/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ## Author
-/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
+
+
+https://github.com/SantiBass.
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
