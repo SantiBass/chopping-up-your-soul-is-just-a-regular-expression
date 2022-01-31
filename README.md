@@ -79,15 +79,16 @@ Grouping and Capturing allows us to make a string or a pattern a whole so it can
 Bracket Expressions are characters enclosed by a pair of bracket.
 - #### `[]`. It will match any single character within the pair of brackets. For example: `[a-z]` will match any character from `a` to `z`.
 - #### `[]%` It will mach any string within the brackets before the percent sign `%`. For example: `[abc]%` will match `c%` from ab`c%`.
-- #### `[^]` It will match any character os string that has not a letter from within the brackets. This is a negation expression. For example: `[^a-z]` will not match any characters from `a-z` but will mach numbers.
-*note: if the first character within the brackets is a `^` then it signifies any chracter **not** in the list, and is unspecified whether it matches an encoding error. 
+- #### `[^]` It will match any character os string that has not a letter from within the brackets. This is a negation expression. For example: `[^a-z]` will not match any characters from `a-z` but will match numbers.
+
 
 
 ### Greedy and Lazy Match
+Greedy and Lazy match are quantifiers that can expand the reach of the matching through the text. They make the preceding quantifier lazy, causing it to match as few characters as possible. By default, quantifiers are greedy, and will match as many characters as possible.
+- #### `{}, *, +` These symbols are used as greedy and lazy mach. For example: `b\w+?`, will match any `b` plus the following letter `be`er, `bo`ot.
 
 
 
-/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Boundaries
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Back-references
