@@ -69,8 +69,15 @@ Flags  are parameters that allow us to search for expressions in a different way
 - #### `i` This is the Ignore Case flag. It makes the whole expression case-insensitive. For example, `/aBc/i` would match `AbC`.
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Grouping and Capturing
-/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
+Grouping and Capturing allows us to make a string or a pattern a whole so it can be matched as a block.
+- #### `() ` A pair of parenthesis creates a capture group.  For example: `(https)` creates a capturing group with a value of `https`
+- #### `(?:) ` When we use `?:`, it groups multiple tokens together without creating a capture group. For example: `(https?:)` will match `https:`
+- #### `(?<>) ` Creates a capturing group that can be referenced via the specified name. For example: `a(?:<fun>bc)` will match `abc` with the group name of fun.
+
+
 ### Bracket Expressions
+
+
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Greedy and Lazy Match
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
