@@ -44,17 +44,29 @@ Quantifiers specify how many instances of a character, group, or character class
 - #### A regular expression follow del
 
 ### OR Operator
-OR operators, also known as Alternation Operator, act like a boolean operator. Les's take a look a couple examples of the 'OR' operator.
+OR operators, also known as Alternation Operator, act like a boolean operator. Les's take a look to a couple examples of the 'OR' operator.
 
 - #### `|` this `OR` operator matches the outer string plus the character(s) before or after itself that are within the parenthesis. For example: `a(b|c)` will match `ab`c, `ac`b, or cool`ab`fan, etc, in a string.
 - #### `[]` this `OR` operator matches the outer string plus one of the characters within the brackets. For example: `a[bc]` will match `ab`c, `ac`b, or cool`ab`fan, etc, in a string 
 
 
 ### Character Classes
-Character classes, also known as `'Charcter Set'`
-
+Character classes, also known as `'Charcter Set'`, is used to match only one out of a set of specific characters. These characters can be digits, words, or white spaces.
+- #### `\d ` It matches a single character from 0-9.  For example: `alpha34`, it will match `3` in alpha`3`4.
+- #### `\D ` It matches a single character that is not a digit character from 0-9.  For example: `34aplha34`, it will only match `a` in 34`a`lpha34.
+- #### `\w ` It matches a word character including alphanumeric and underscore. For example: `\w`  will match  `h` in   `h`i or `\w\w` will match `hi`.
+- #### `\W ` It matches any character that is not a word character including alphanumeric and underscore.
+- #### `\s ` It matches any whitespace character and that includes spaces, tabs, line breaks. For example ` `.
+- #### `\S ` It matches any character that is not a whitespace character and that includes spaces, tabs, line breaks.
+- #### `. ` It matches any character.
+- #### ``
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Flags
+Flags  are parameters that allow us to search for expressions in a different way. Each flag is made of a single character and have different functions. Here are some examples.
+
+- #### `g` This flag is called Global flag. A global flag will match any character globally. For example: `/ll/g` will match `ll` form he`ll`o.
+- #### `m` This flag is called Multiline flag. When the multiline flag is enabled, beginning and end anchors (^ and $) will match the start and end of a line, instead of the start and end of the whole string.
+- #### `i` This is the Ignore Case flag. It makes the whole expression case-insensitive. For example, `/aBc/i` would match `AbC`.
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Grouping and Capturing
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
