@@ -76,10 +76,17 @@ Grouping and Capturing allows us to make a string or a pattern a whole so it can
 
 
 ### Bracket Expressions
+Bracket Expressions are characters enclosed by a pair of bracket.
+- #### `[]`. It will match any single character within the pair of brackets. For example: `[a-z]` will match any character from `a` to `z`.
+- #### `[]%` It will mach any string within the brackets before the percent sign `%`. For example: `[abc]%` will match `c%` from ab`c%`.
+- #### `[^]` It will match any character os string that has not a letter from within the brackets. This is a negation expression. For example: `[^a-z]` will not match any characters from `a-z` but will mach numbers.
+*note: if the first character within the brackets is a `^` then it signifies any chracter **not** in the list, and is unspecified whether it matches an encoding error. 
 
 
-/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Greedy and Lazy Match
+
+
+
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
 ### Boundaries
 /^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)$/
