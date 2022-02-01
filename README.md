@@ -20,9 +20,6 @@ Introductory paragraph (replace this with your text)
 - [Grouping and Capturing](#grouping-and-capturing)
 - [Bracket Expressions](#bracket-expressions)
 - [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
 
 ## Regex Components
 
@@ -89,6 +86,6 @@ Greedy and Lazy match are quantifiers that can expand the reach of the matching 
 
 ## Author
 
-
-https://github.com/SantiBass.
+I'm Santiago Ibarra and I'm in a journey to become a web developer. I hope this tutorial about regular expressions has been of good use to you so it can help you understand it better. You can visit my GitHub at [SantiBass](https://github.com/SantiBass).
+Have a wonderful day!
 A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
